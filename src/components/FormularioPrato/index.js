@@ -91,7 +91,7 @@ function FormularioPrato() {
                     <option value="">Selecione a categoria</option>
                     <option value="ENTRADA">Entrada</option>
                     <option value="PRATO_PRINCIPAL">Prato principal</option>
-                    <option value="SOBREMESA">Sobremsa</option>
+                    <option value="SOBREMESA">Sobremesa</option>
                     <option value="BEBIDA">Bebida</option>
                     </select>
                 <select
@@ -123,7 +123,7 @@ function FormularioPrato() {
                         style={{ maxWidth: '100%', marginTop: '10px', borderRadius: '8px'}}
                     />
                 )}
-                
+
                 <button type="submit">Cadastrar</button>
             </form>
             <button onClick={() => navigate('/pratos')} className="link-pratos">

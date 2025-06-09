@@ -30,7 +30,7 @@ function ListaPratos(){
                         <strong>Preço: </strong> {prato.preco}<br/>
                         <strong>Categoria: </strong> {prato.categoria}<br/>
                         <strong>Disponibilidade: </strong> {prato.disponibilidade}<br/>
-                        <strong>Imagem: </strong> {prato.urlImagem}<br/>
+                        <strong>Imagem: </strong> {prato.previewImagem}<br/>
                     </li>
                 ))
             )}
