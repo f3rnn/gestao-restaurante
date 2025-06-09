@@ -32,7 +32,7 @@ function FormularioPrato() {
 
     const cadastrarPrato = async () => {
         try{
-            const response = await axios.post('https://baratier-backend.onrender.com/jogadores', {nomePrato, descricao, preco, categoria, disponibilidade, urlImagem})
+            const response = await axios.post('https://baratier-backend.onrender.com/pratos', {nomePrato, descricao, preco, categoria, disponibilidade, urlImagem})
             exibirMensagem(response.data.mensagem || 'Usuário cadastrado com sucesso!', 'sucesso')
             setNomePrato('')
             setDescricao('')
