@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
 html {
     box-sizing: border-box;
 }
   
 body {
-    height: 100%;
+    background: url('/src/assets/images/background.jpg');
+    background-size: cover;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -39,4 +43,8 @@ ul {
   
 .oculto {
     display: none;
+}
+
+html, body, #root {
+  font-family: 'Pirata One', cursive;
 }

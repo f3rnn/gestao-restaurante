@@ -15,7 +15,7 @@ h2 {
     font-size: 20px;
     text-align: center;
     font-weight: bolder;
-    color: #eb6427;
+    color: #000000;
 }
   
 form {
@@ -56,24 +56,24 @@ select {
 }
   
 button {
-    background-color: #9ed99e;
-    color: white;
+    background-color: #f4e3c1;
+    color: #000000;
     cursor: pointer;
     font-weight: bold;
-    border: 2px solid #9ed99e; 
+    border: 2px solid #5c3a21 ;
     margin-top: 10px;
     transition: 0.3s;
 }
   
 button:hover {
-    background-color: #75c9a3;
-    border: 2px solid #75c9a3;
+    background-color: #5c3a21;
+    border: 2px solid #5c3a21;
 }
   
 .link-pratos {
     margin-top: 25px;
     text-decoration: none;
-    color: #f4f4f4;
+    color: #000000;
     font-size: 14px;
 }
   

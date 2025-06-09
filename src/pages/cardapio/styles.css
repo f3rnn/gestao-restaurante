@@ -7,7 +7,6 @@
 }
   
 .pagina-lista-pratos .container {
-    background-color: #D9BE6C;
     padding: 32px;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -23,18 +22,17 @@
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 35px;
-    color: #284ea7;
+    color: #000000;
 }
   
 .pagina-lista-pratos .container .link-voltar {
     display: block;
     margin-top: 20px;
     font-size: 16px;
-    text-align: center;
-    color: #f4f4f4; 
+    text-align: center; 
     text-decoration: none;
 }
   
 .pagina-lista-pratos .container .link-voltar:hover {
     text-decoration: none;
-}
+}   
