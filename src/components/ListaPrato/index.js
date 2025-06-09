@@ -30,7 +30,12 @@ function ListaPratos(){
                         <strong>Preço: </strong> {prato.preco}<br/>
                         <strong>Categoria: </strong> {prato.categoria}<br/>
                         <strong>Disponibilidade: </strong> {prato.disponibilidade}<br/>
-                        <strong>Imagem: </strong> {prato.previewImagem}<br/>
+                        <strong>Imagem: </strong><br/>
+                        <img
+                            src={prato.urlImagem}
+                            alt={`Imagem de ${prato.nomePrato}`}
+                            style={{ maxWidth: '300px', borderRadius: '8px', marginTop: '8px'}}
+                        />
                     </li>
                 ))
             )}
