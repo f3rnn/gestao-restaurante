@@ -26,6 +26,7 @@ function FormularioPrato() {
     const [categoria, setCategoria] = useState('')
     const [disponibilidade, setDisponibilidade] = useState('')
     const [urlImagem, setUrlImagem] = useState('')
+    const [previewImagem, setPreviewImagem] = useState(null)
     const navigate = useNavigate()
     const { exibirMensagem, mensagem, tipoMensagem, visivel, fecharMensagem }  = useMensagem()
 
@@ -39,6 +40,7 @@ function FormularioPrato() {
             setCategoria('')
             setDisponibilidade('')
             setUrlImagem('')
+            setPreviewImagem(null)
         } catch (erro){
             let erroMsg = 'Erro ao conectar ao servidor'
             if (erro.response && erro.response.data) {
@@ -106,9 +108,22 @@ function FormularioPrato() {
                     id="urlImagem"
                     value={urlImagem}
                     placeholder="https://exemplo.com/imagem.jpg"
-                    onChange={(e) => setUrlImagem(e.target.value)}
+                    onChange={(e) => {setUrlImagem(e.target.value)
+                        setPreviewImagem(e.target.value)
+                    }}
                     required pattern="https?://.*\.(?:png|jpg|jpeg|gif|svg)"
                 />
+                <div style={{ margin: "10px 0", textAlign: "center"}}>
+                </div>
+
+                {previewImagem && (
+                    <img
+                        src={previewImagem}
+                        alt="Pré-visualização"
+                        style={{ maxWidth: '100%', marginTop: '10px', borderRadius: '8px'}}
+                    />
+                )}
+                
                 <button type="submit">Cadastrar</button>
             </form>
             <button onClick={() => navigate('/pratos')} className="link-pratos">
